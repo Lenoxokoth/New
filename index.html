@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bike Website</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"/>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="background"></div>
+        <div class="navbar">
+            <ul class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#bike">Bikes</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#privacy">Privacy</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="logo">
+                <a href="#home"><img src="./image/logo.png" alt="logo"></a>
+            </div>
+        </div>
+        <div class="header-side">
+            <div class="side-image">
+                <img src="./image/bike.png" class="bike" alt="side-image-bike">
+                
+            </div>
+            <div class="head-content">
+                <h1 class="head-bike">BMW G 310R</h1>
+                <p>The strength of BMW G 310R is in its lightness and agility. The bike not only deliever fun in the big city but alsowhen redefining the city limitbwhen changing the corner quickly</p>
+                <button>feature</button>
+            </div>
+        </div>
+
+        <div class="head-socials">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+
+        </div>
+
+        <div class="pagination">
+            <img src="./image/bike.png" onclick="imgSlider('./image/bike.png')">
+            <img src="./image/bike2.png" onclick="imgSlider('./image/bike2.png')">
+            <img src="./image/bike3.png" onclick="imgSlider('./image/bike3.png')">
+        </div>
+        </div>
+
+
+        <section id="bike" class="container-bike">
+            <h1>Bikes</h1>
+            <div class="btn">
+                <li data-filter ="*">All</li>
+                <li data-filter=".bmw">BMW</li>
+                <li data-filter=".suzuki">Suzuki</li>
+                <li data-filter=".honda">Honda</li>
+            </div>
+            <div class="project-container">
+                <article class="project bmw mix" data-order="1">
+                    <div class="project-image">
+                        <img src="./image/l1.png" alt="">
+                    </div>
+                    <h3>bmw</h3>
+                </article>
+
+                <article class="project suzuki mix" data-order="2">
+                    <div class="project-image">
+                        <img src="./image/l2.png" alt="">
+                    </div>
+                    <h3>suzuki</h3>
+                </article>
+
+                <article class="project suzuki mix" data-order="3">
+                    <div class="project-image">
+                        <img src="./image/l3.png" alt="">
+                    </div>
+                    <h3>Suzuki</h3>
+                </article>
+
+                <article class="project honda mix" data-order="1">
+                    <div class="project-image">
+                        <img src="./image/l4.png" alt="">
+                    </div>
+                    <h3>Honda</h3>
+                </article>
+
+                <article class="project honda mix" data-order="1">
+                    <div class="project-image">
+                        <img src="./image/l5.png" alt="">
+                    </div>
+                    <h3>Honda</h3>
+                </article>
+
+                <article class="project bmw mix" data-order="1">
+                    <div class="project-image">
+                        <img src="./image/l6.png" alt="">
+                    </div>
+                    <h3>bmw</h3>
+                </article>
+                
+            </div>
+        </section>
+        <script src="./mix/dist/mixitup.min.js"></script>
+      <script src="./main.js"></script> 
+</body>
+</html>
